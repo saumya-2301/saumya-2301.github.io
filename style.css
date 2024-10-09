@@ -419,27 +419,27 @@ section {
 }
 
 #home {
-    background: url('1.jpg') no-repeat center center/cover;
+    background: url('home.jpg') no-repeat center center/cover;
 }
 
 #about {
-    background: url('2.jpg') no-repeat center center/cover;
+    background: url('about.jpg') no-repeat center center/cover;
 }
 
 #hackathons {
-    background: url('3.jpg') no-repeat center center/cover;
+    background: url('hackathons.jpg') no-repeat center center/cover;
 }
 
 #portfolio {
-    background: url('4.jpg') no-repeat center center/cover;
+    background: url('portfolio.jpg') no-repeat center center/cover;
 }
 
 #skills {
-    background: url('5.jpg') no-repeat center center/cover;
+    background: url('skills.jpg') no-repeat center center/cover;
 }
 
 #contact {
-    background: url('6.jpg') no-repeat center center/cover;
+    background: url('contact.jpg') no-repeat center center/cover;
 }
 
 .intro h1 {
