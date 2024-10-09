@@ -1,0 +1,621 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1 {
+    font-size: 60px; /* Increased size for h1 */
+}
+
+h2 {
+    font-size: 36px; /* Increased size for h2 */
+}
+
+.projects {
+    display: flex; /* Use Flexbox for horizontal layout */
+    justify-content: space-around; /* Space items evenly */
+    flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+    margin-top: 20px; /* Add some space above the projects */
+}
+/* Progress bar styling */
+.progress-bar {
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    width: 100%;
+    height: 10px;
+    margin: 5px 0;
+    position: relative;
+}
+
+.progress-fill {
+    display: block;
+    height: 100%;
+    background-color: #ffcb05;
+    border-radius: 10px;
+    transition: width 0.4s ease-in-out;
+}
+
+/* Hover effect on skill list */
+.skill-category ul li:hover span {
+    font-weight: bold;
+    color: #ffcb05;
+    cursor: pointer;
+}
+
+.skill-category ul li:hover .progress-fill {
+    background-color: #2575fc;
+}
+
+/* Section styling */
+.skill-category h3 {
+    color: #ffcb05;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.skill-category ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skill-category ul li {
+    margin: 10px 0;
+    font-size: 18px;
+    position: relative;
+}
+
+/* Hover tooltip (optional) */
+
+
+.skill-category ul li:hover::after {
+    opacity: 1;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+    .skill-category {
+        width: 100%;
+    }
+
+    .progress-bar {
+        height: 8px;
+    }
+}
+/* Progress bar styling */
+.progress-bar {
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    width: 100%;
+    height: 10px;
+    margin-top: 5px;
+}
+
+.progress-fill {
+    display: block;
+    height: 100%;
+    background-color: #ffcb05;
+    border-radius: 10px;
+    transition: width 0.4s ease-in-out;
+}
+
+/* Skill list styling */
+.skill-category ul li {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+.skill-category ul li a {
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+}
+
+.skill-category ul li a:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(-5px);
+}
+
+/* Tooltip styling */
+.tooltip {
+    visibility: hidden;
+    opacity: 0;
+    background-color: #ffcb05;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 30px;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 1;
+    font-size: 12px;
+}
+
+/* Hover effect on skill link */
+.skill-link:hover {
+    color: #ffcb05;
+    font-weight: bold;
+}
+
+/* Section styling */
+.skill-category h3 {
+    color: #ffcb05;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.skill-category ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skill-category ul li:hover .progress-fill {
+    background-color: #2575fc;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+    .skill-category {
+        width: 100%;
+    }
+
+    .progress-bar {
+        height: 8px;
+    }
+}
+
+
+.project-card {
+    background-color: #fff;
+    color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 15px;
+    width: 30%; /* Adjust width as needed for your layout */
+    transition: transform 0.3s; /* Add transition for hover effect */
+}
+
+.project-card:hover {
+    transform: scale(1.05); /* Slightly enlarge the card on hover */
+}
+.project-image {
+    width: 100%; /* Make image responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Round corners of images */
+    margin-bottom: 15px; /* Space between image and text */
+}
+
+.project-card {
+    background-color: #fff;
+    color: #333;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 10px;
+    width: 28%; /* Adjust width as needed for your layout */
+    transition: transform 0.3s; /* Add transition for hover effect */
+}
+.github-link {
+    color: black; /* Change color as desired */
+    text-decoration: none; /* Remove underline */
+    font-size: 18px; /* Adjust font size */
+    margin-top: 10px; /* Space above the link */
+    display: inline-flex; /* Align icon and text */
+    align-items: center; /* Center vertically */
+}
+#hackathons {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.hackathon-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 15px 0;
+    transition: transform 0.3s;
+}
+
+.hackathon-card:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.github-link i {
+    margin-right: 5px; /* Space between icon and text */
+}
+
+.github-link:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.project-card:hover {
+    transform: scale(1.05); /* Slightly enlarge the card on hover */
+}
+
+/* Add styling for the GitHub link button */
+.btn {
+    display: inline-block;
+    background-color: #2575fc; /* Button background color */
+    color: white; /* Button text color */
+    padding: 10px 15px; /* Button padding */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s; /* Transition effect for hover */
+}
+
+.btn:hover {
+    background-color: #6a11cb; /* Change background on hover */
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    line-height: 1.6;
+    scroll-behavior: smooth; /* Smooth scrolling for navigation links */
+}
+#hackathons {
+    padding: 50px 20px;
+    text-align: center;
+    background: linear-gradient(to bottom right, #1c1c1c, #444);
+}
+
+.timeline {
+    position: relative;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.timeline-item {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    position: relative;
+    transition: transform 0.3s, background 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.timeline-item:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    background: rgba(255, 255, 255, 0.2);
+}
+/* Slide-in animation */
+@keyframes slide-in {
+    from {
+        transform: translateY(100%); /* Start from below */
+        opacity: 0; /* Start as invisible */
+    }
+    to {
+        transform: translateY(0); /* End at original position */
+        opacity: 1; /* End as fully visible */
+    }
+}
+
+.slide-in {
+    animation: slide-in 0.5s forwards; /* Apply the animation */
+}
+
+/* Optional: Add a delay to each section */
+#home {
+    animation-delay: 0s; /* No delay for home */
+}
+
+#about {
+    animation-delay: 0.2s; /* 0.2s delay for about */
+}
+
+#portfolio {
+    animation-delay: 0.4s; /* 0.4s delay for portfolio */
+}
+
+#skills {
+    animation-delay: 0.6s; /* 0.6s delay for skills */
+}
+
+#hackathons {
+    animation-delay: 0.8s; /* 0.8s delay for hackathons */
+}
+
+#contact {
+    animation-delay: 1s; /* 1s delay for contact */
+}
+
+.social-link {
+    color: #0077b5; /* LinkedIn color */
+    font-size: 18px;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+    transition: color 0.3s;
+}
+
+.social-link:hover {
+    color: #005582; /* Darker shade on hover */
+}
+
+.fab {
+    margin-right: 5px; /* Space between icon and text */
+}
+
+
+@media (min-width: 768px) {
+    .timeline {
+        width: 80%; /* Adjust width on larger screens */
+    }
+}
+
+h2 {
+    margin-bottom: 30px;
+    font-size: 36px; /* Increase font size for section heading */
+    color: #ffcb05; /* Color for headings */
+}
+
+
+
+nav {
+    background-color: transparent; /* Make the background transparent */
+    color: #fff;
+    padding: 1rem;
+    position: absolute; /* Absolute positioning to hover over home section */
+    width: 100%;
+    top: 20px; /* Positioning below the intro */
+    left: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ffcb05; /* Change color on hover */
+}
+
+section {
+    height: 100vh; /* All sections will be the full height of the viewport */
+    padding: 100px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    
+}
+
+.section-content {
+    max-width: 800px;
+    text-align: center;
+}
+.section-content p{
+    text-align: justify;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Creates the transparent overlay */
+    z-index: -1;
+}
+
+#home {
+    background: url('C:/Users/asus/Downloads/pexels-hobiphotography-16890329.jpg') no-repeat center center/cover;
+}
+
+#about {
+    background: url('C:/Users/asus/Downloads/pexels-francesco-ungaro-1525041.jpg') no-repeat center center/cover;
+}
+
+#hackathons {
+    background: url('C:/Users/asus/Downloads/pexels-8moments-1183099.jpg') no-repeat center center/cover;
+}
+
+#portfolio {
+    background: url('C:/Users/asus/Downloads/pexels-vladalex94-1402787.jpg') no-repeat center center/cover;
+}
+
+#skills {
+    background: url('C:/Users/asus/Downloads/pexels-philkallahar-983200.jpg') no-repeat center center/cover;
+}
+
+#contact {
+    background: url('C:/Users/asus/Downloads/pexels-pixabay-326055.jpg') no-repeat center center/cover;
+}
+
+.intro h1 {
+    font-size: 50px;
+}
+
+.intro span {
+    color: #ffcb05;
+}
+
+.intro p {
+    font-size: 24px;
+}
+
+.intro .btn {
+    background-color: #ffcb05;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.project-card {
+    text-align: center;
+    margin: 20px;
+}
+.animated-name {
+    display: inline-block;
+    overflow: hidden; /* Ensures the text is hidden during animation */
+   
+    white-space: nowrap; /* Prevents text from wrapping */
+    animation: typing 4s steps(15, end), blink-caret 0.75s step-end infinite;
+}
+
+/* Typing animation */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+/* Blinking caret animation */
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: black; /* Change to your preferred color */
+    }
+}
+
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover img {
+    transform: scale(1.05);
+}
+
+.github-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: black;
+    text-decoration: none;
+}
+
+.project-card {
+    background-color: #fff;
+    color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 15px;
+    width: 30%;
+    display: inline-block;
+}
+
+.skill-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skill {
+    background-color: #2575fc;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.contact-info {
+    text-align: center;
+    margin-top: 20px;
+    color:#ffcb05;
+}
+
+.contact-info p {
+    font-size: 18px;
+    margin: 10px 0;
+    color:#fff;
+}
+
+.contact-info a {
+    color: #ffcb05; /* Color for links */
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.social-media {
+    margin-top: 15px;
+}
+
+.social-media a {
+    margin: 0 10px;
+    color: #ffcb05; /* Color for social media links */
+    font-size: 24px; /* Size of the icons */
+    transition: color 0.3s;
+}
+
+.social-media a:hover {
+    color: #fff; /* Change color on hover */
+}
+
+
+.skills-categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.skill-category {
+    width: 45%; /* Two categories side by side */
+    margin-bottom: 30px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.skill-category h3 {
+    color: #ffcb05;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.skill-category ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skill-category ul li {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+    .skill-category {
+        width: 100%; /* Make categories stack on top of each other on small screens */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack nav items vertically on small screens */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Add spacing between items */
+    }
+}
