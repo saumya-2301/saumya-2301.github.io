@@ -419,27 +419,27 @@ section {
 }
 
 #home {
-    background: url('C:/Users/asus/Downloads/pexels-hobiphotography-16890329.jpg') no-repeat center center/cover;
+    background: url('1.jpg') no-repeat center center/cover;
 }
 
 #about {
-    background: url('C:/Users/asus/Downloads/pexels-francesco-ungaro-1525041.jpg') no-repeat center center/cover;
+    background: url('2.jpg') no-repeat center center/cover;
 }
 
 #hackathons {
-    background: url('C:/Users/asus/Downloads/pexels-8moments-1183099.jpg') no-repeat center center/cover;
+    background: url('3.jpg') no-repeat center center/cover;
 }
 
 #portfolio {
-    background: url('C:/Users/asus/Downloads/pexels-vladalex94-1402787.jpg') no-repeat center center/cover;
+    background: url('4.jpg') no-repeat center center/cover;
 }
 
 #skills {
-    background: url('C:/Users/asus/Downloads/pexels-philkallahar-983200.jpg') no-repeat center center/cover;
+    background: url('5.jpg') no-repeat center center/cover;
 }
 
 #contact {
-    background: url('C:/Users/asus/Downloads/pexels-pixabay-326055.jpg') no-repeat center center/cover;
+    background: url('6.jpg') no-repeat center center/cover;
 }
 
 .intro h1 {
