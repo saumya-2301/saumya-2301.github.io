@@ -10,6 +10,17 @@ h1 {
 h2 {
     font-size: 36px; /* Increased size for h2 */
 }
+body {
+    background-image: url('C:/Users/asus/Desktop/portfolio/saumya-2301.github.io/images/home.jpg'); /* Replace with the actual path to your home section image */
+    background-size: cover; /* Ensures the image covers the entire screen */
+    background-attachment: fixed; /* Keeps the image fixed while scrolling */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    margin: 0;
+    padding: 0;
+}
+
+
 
 .projects {
     display: flex; /* Use Flexbox for horizontal layout */
@@ -258,11 +269,7 @@ body {
     line-height: 1.6;
     scroll-behavior: smooth; /* Smooth scrolling for navigation links */
 }
-#hackathons {
-    padding: 50px 20px;
-    text-align: center;
-    background: linear-gradient(to bottom right, #1c1c1c, #444);
-}
+
 
 .timeline {
     position: relative;
@@ -418,29 +425,7 @@ section {
     z-index: -1;
 }
 
-#home {
-    background: url('home.jpg') no-repeat center center/cover;
-}
 
-#about {
-    background: url('about.jpg') no-repeat center center/cover;
-}
-
-#hackathons {
-    background: url('hackathons.jpg') no-repeat center center/cover;
-}
-
-#portfolio {
-    background: url('portfolio.jpg') no-repeat center center/cover;
-}
-
-#skills {
-    background: url('skills.jpg') no-repeat center center/cover;
-}
-
-#contact {
-    background: url('contact.jpg') no-repeat center center/cover;
-}
 
 .intro h1 {
     font-size: 50px;
